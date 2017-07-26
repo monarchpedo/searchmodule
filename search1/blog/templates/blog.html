@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<h1>fuck</h1>
+{% for post in Posts %}
+<h2>{{post.title}}</h2>
+<div class="post_meta">
+    on {{post.date}}
+</div>
+<div class="post_body">
+{{post.body}}<br/>
+</div>
+
+{% endfor %}
+{% endblock %}
+</body>	
+</html>
